@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/',   // <-- important! Setting '/' when using custom domain where content will be relative to root
   plugins: [
     vue(),
   ],
